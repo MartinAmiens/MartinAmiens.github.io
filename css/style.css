@@ -29,6 +29,18 @@ nav ul li {
     margin: 0 15px;
 }
 
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:visited {
+    background-color: #fff;
+}
+
 nav ul li a:hover {
     background-color: #555;
     border-radius: 5px;
