@@ -33,7 +33,7 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    padding: 5px 10px;
+    padding: 5px 10px 3px 10px; /* moins de padding en bas */
     transition: color 0.3s ease;
 }
 
@@ -43,7 +43,7 @@ nav ul li a::after {
     width: 0%;
     height: 2px;
     left: 0;
-    bottom: 0;
+    bottom: 0; /* or bottom: -2px */
     background-color: #fff;
     transition: width 0.3s ease;
 }
