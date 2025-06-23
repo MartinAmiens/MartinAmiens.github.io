@@ -18,16 +18,7 @@
         </nav>
     </header>
     <footer>
-        <p>&copy; <span id="current-year"></span> Martin AMIENS, All rights reserved. Last update: <span id="last-updated-date"></span> </p>
+        <p>&copy; 2025 Martin AMIENS, All rights reserved.</p>
     </footer>
-    <script>
-        const currentYear = new Date();
-        const yearOptions = {year: 'numeric'};
-        document.getElementById('current-year').textContent = currentYear.toLocaleDateString('fr-FR', yearOptions);
-
-        const lastUpdateDate = new Date();
-        const fullDateOptions = { year: 'numeric', month: 'long', day:'numeric'};
-        document.getElementById('last-updated-date').textContent = lastUpdateDate.toLocaleDateString('fr-FR', fullDateOptions);
-    </script>
 </body>
 </html>
