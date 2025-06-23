@@ -52,11 +52,11 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
-/*navigation with keyboard*/
+/* navigation with keyboard
 nav ul li a:focus {
-    outline: 2px solid #ff6600;
+    outline: 2px solid #e2ddd9;
     outline-offset: 2px;
-}
+} */
 
 /*Main styles*/
 main {
