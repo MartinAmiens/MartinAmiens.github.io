@@ -81,7 +81,7 @@ img {
 }
 
 /*Home styles and configuration*/
-#Home {
+.home {
     position: relative;
     padding: 20px;
 }
