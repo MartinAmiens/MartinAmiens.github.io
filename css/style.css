@@ -82,6 +82,7 @@ img {
 .home-text {
     flex: 1;
     min-width: 300px;
+    box-shadow: none;
 }
 
 /* profile photo style*/

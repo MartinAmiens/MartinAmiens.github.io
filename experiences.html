@@ -29,10 +29,25 @@
                     <li>Developing and implementing model evaluation pipelines according to the company standards</li>
                 </ul>
             </div>
+
+            <div class="job-entry">
+                <h3>Participation in the development of a package on Rstudio during a 3-month internship</h3>
+                <h4>MIA Paris-Saclay | 01/05/2024 - 30/07/2024</h4>
+                <ul>
+                    <li>Development of ManagHAL package focused on bibliometric data, network manipulation and statistical analysis.</li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Martin AMIENS, All rights reserved. Last update: date... </p>
+        <p>&copy; <span id="current-year"></span> Martin AMIENS, All rights reserved. Last update: <span id="last-updated-date"></span> </p>
     </footer>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear;
+
+        const lastUpdateDate = new Date();
+        const options = { year: 'numeric', month: 'long', day:'numeric'};
+        document.getElementById('last-updated-date').textContent = lastUpdateDate.toLocaleDateString('fr-FR', options);
+    </script>
 </body>
 </html>
