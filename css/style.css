@@ -184,9 +184,13 @@ footer {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
     animation: fadeIn 0.3s ease-in-out; /* Smooth fade-in */
-    display: flex; /* Use flexbox to center content */
+    /* display: flex; Use flexbox to center content */
     justify-content: center;
     align-items: center;
+}
+
+.project-modal.active {
+    display: flex;
 }
 
 .modal-content {

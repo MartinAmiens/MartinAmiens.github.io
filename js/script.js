@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const modal = document.getElementById(`modal-${projectId}`); // Find the corresponding modal
 
             if (modal) {
-                modal.style.display = 'block'; // Show the modal
+                modal.classList.add('active');
             }
         });
     });
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         button.addEventListener('click', () => {
             const modal = button.closest('.project-modal'); // Find the closest parent modal
             if (modal) {
-                modal.style.display = 'none'; // Hide the modal
+                modal.classList.remove('active');
             }
         });
     });
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('click', (event) => {
         // Check if the clicked element has the 'project-modal' class, meaning it's the backdrop
         if (event.target.classList.contains('project-modal')) {
-            event.target.style.display = 'none'; // Hide that specific modal
+            event.target.classList.remove('active');// Hide that specific modal
         }
     });
 });
