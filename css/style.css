@@ -87,9 +87,12 @@ img {
     margin: 20px auto;
     background-color: #fff;
     gap: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     flex-wrap: wrap;
+}
+
+.home {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .home-text {
