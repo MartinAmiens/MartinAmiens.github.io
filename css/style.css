@@ -244,3 +244,72 @@ footer {
         margin: 5% auto; /* Adjust margin */
     }
 }
+/* --- Page Contact --- */
+
+#contact {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center; /* Centre le contenu de la section */
+}
+
+#contact h2 {
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 2.5em;
+}
+
+.intro-text {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.social-links-grid {
+    display: grid;
+    /* Crée une grille responsive : 2 colonnes par défaut,
+       mais s'adapte à 1 colonne sur petits écrans */
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px; /* Espace entre les éléments de la grille */
+    justify-content: center; /* Centre les éléments dans la grille */
+    align-items: start; /* Aligne les éléments au début verticalement */
+}
+
+.social-link-item {
+    text-decoration: none; /* Supprime le soulignement du lien */
+    color: #333; /* Couleur du texte et de l'icône */
+    display: flex; /* Permet d'aligner l'icône et le texte verticalement */
+    flex-direction: column; /* Icône au-dessus du texte */
+    align-items: center; /* Centre l'icône et le texte horizontalement */
+    padding: 20px 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.social-link-item:hover {
+    transform: translateY(-8px); /* Effet de soulèvement au survol */
+    background-color: #e0f2f7; /* Changement de fond au survol */
+    color: #007bff; /* Changement de couleur du texte et icône au survol */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* Ombre plus prononcée au survol */
+}
+
+.social-link-item i {
+    font-size: 3.5em; /* Taille de l'icône */
+    margin-bottom: 15px; /* Espace entre l'icône et le texte */
+}
+
+.social-link-item span {
+    font-size: 1.1em; /* Taille du texte */
+    font-weight: bold;
+}
+
+/* Styles spécifiques pour les icônes au survol si vous voulez des couleurs de marque */
+.social-link-item:hover .fa-github { color: #333; } /* GitHub est souvent noir/gris */
+.social-link-item:hover .fa-linkedin { color: #0077B5; } /* Bleu LinkedIn */
+.social-link-item:hover .fa-instagram { color: #E4405F; } /* Rose Instagram */
+.social-link-item:hover .fa-envelope { color: #D44638; } /* Rouge Gmail / générique */
