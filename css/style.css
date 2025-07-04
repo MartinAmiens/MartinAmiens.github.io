@@ -312,3 +312,48 @@ footer {
 .social-link-item:hover .fa-github { color: #333; } /* GitHub est souvent noir/gris */
 .social-link-item:hover .fa-linkedin { color: #0077B5; } /* Bleu LinkedIn */
 .social-link-item:hover .fa-envelope { color: #D44638; } /* Rouge Gmail / générique */
+
+
+.skill-tree-container {
+    width: 90%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill-branch {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+}
+
+.branch-title {
+    color: #0056b3;
+    cursor: pointer; /* Indicate it's clickable */
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+.skill-list, .sub-skill-list {
+    list-style: none;
+    padding-left: 20px; /* Indent sub-items */
+}
+
+.skill-list li, .sub-skill-list li {
+    margin-bottom: 8px;
+    padding: 5px 0;
+}
+
+.skill-name {
+    font-weight: bold;
+    color: #555;
+    cursor: pointer; /* Indicate it's clickable */
+}
+
+.collapsed {
+    display: none;
+}
