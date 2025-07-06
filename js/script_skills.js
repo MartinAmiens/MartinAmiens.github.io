@@ -17,8 +17,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (targetList) {
             targetList.classList.toggle('collapsed');
-            // Optional: Change icon to indicate expanded/collapsed state (future enhancement)
-        }
+            // Change icon to indicate expanded/collapsed state
+            const icon = clickedElement.querySelector('i');
+            if (targetList.classList.contains('collapsed')) {
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-right');
+            } else {
+                icon.classList.remove('fa-chevron-right');
+                icon.classList.add('fa-chevron-down');
+            }        }
     }
 
     // Add event listeners to main branch titles
