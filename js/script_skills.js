@@ -1,4 +1,4 @@
-// script.js
+// js/script_skills.js
 
 document.addEventListener('DOMContentLoaded', () => {
     // Function to toggle the visibility of a skill list
